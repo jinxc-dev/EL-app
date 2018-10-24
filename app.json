@@ -1,0 +1,30 @@
+{
+	"pages":[
+		"pages/index/index",
+		"pages/logs/logs"
+	],
+	"window":{
+		"backgroundTextStyle":"light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTextStyle":"black"
+	},
+	"tabBar": {
+		"selectedColor": "#ff5801",
+		"backgroundColor" : "#fff",
+		"borderStyle":"white",
+		"list": [ {
+			"pagePath": "pages/index/index",
+			"iconPath": "images/tabbar/lesson.png",
+			"selectedIconPath": "images/tabbar/lesson-selected.png"
+		}, {
+			"pagePath": "pages/index/index",
+			"iconPath": "images/tabbar/compass.png",
+			"selectedIconPath": "images/tabbar/compass-selected.png"			
+		}, {
+			"pagePath": "pages/index/index",
+			"iconPath": "images/tabbar/profile.png",
+			"selectedIconPath": "images/tabbar/profile-selected.png"
+		}]
+
+	}
+}
