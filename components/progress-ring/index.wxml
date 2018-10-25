@@ -1,0 +1,2 @@
+<!--components/shop/shop.wxml-->
+<canvas canvas-id="ring" class="ring"></canvas>

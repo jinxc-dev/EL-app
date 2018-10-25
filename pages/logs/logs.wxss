@@ -6,3 +6,11 @@
 .log-item {
   margin: 10rpx;
 }
+
+.weui-navbar__item.weui-bar__item_on {
+  color: #00afc7;
+  font-weight: 400;
+}
+.weui-navbar__slider{
+  background-color: #00afc7;
+}

@@ -1,0 +1,17 @@
+<!--components/shop/shop.wxml-->
+
+<view wx:for="{{list}}" wx:key="{{index}}" class="section" style="flex-direction:row;">
+    <view class="info-section">
+        <view class="text-title"> {{item.title}}</view>
+        <view class="text-context"> {{"Started on:" + item.startedTime}}</view>
+        <navigator url="{{url}}?id={{item.id}}" style="display:inline-block">
+            <button>View phrases</button>
+        </navigator>
+            
+    </view>
+    <view class="process-section">
+        <progress-ring value="{{item.status}}" style="float:right;"></progress-ring>
+    </view>
+
+</view>
+

@@ -1,0 +1,37 @@
+/* @import "/app.wxss"; */
+
+.section {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #F8F8F9;
+    display: flex;
+}
+
+.info-section {
+    width: 60%;
+}
+.process-section {
+    width: 40%;
+    float: right;
+}
+.text-title {
+    color: #182C4F;
+    font-weight: bolder;
+    font-size: 38rpx;
+}
+.text-context {
+    color: #768087;
+    font-size: 32rpx;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0C66FF;
+    color: #fff;
+    font-size:30rpx;
+    display:inline-block;
+
+    /* padding:0 1.34em; */
+}
+    
+
