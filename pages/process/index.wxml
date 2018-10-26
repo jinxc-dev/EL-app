@@ -1,0 +1,69 @@
+<!--lesson.wxml-->
+<view class="container">
+	<view class="section_hd">
+		<view class="info-section">
+			<view class="text-title"> {{info.title}}</view>
+			<view class="text-context"> {{"Started on:" + info.startedTime}}</view>
+		</view>
+		<view class="process-section">
+			<progress-ring value="{{info.status}}" style="float:right;"></progress-ring>
+		</view>
+	</view>
+
+	<view wx:if="{{is_checked===false}}"class="page-body">
+		<view class="panel study-panel">
+			<view class="el-card">
+				<view class="title">I am going to school</view>
+				<view class="media-btn-group">
+					<media-button class="media-btn" player_string="Listed now"></media-button>
+					<!-- <view class="round-btn retry-btn" style="background-color: #FFAD0D">
+						Re-try
+					</view> -->
+				</view>				
+			</view>
+			<view wx:if="{{is_record===false}}" 
+				id="record-btn"
+				bindtap="recordStart" 
+				class="round-btn" style="background-color: #EF3D3D">Press to Record</view>
+			<view wx:else 
+				id="stop-btn"
+				bindtap="recordStop" 
+				class="round-btn signal-bg" style="background-color: #EF3D3D"></view>
+		</view>
+		<view class="panel">
+			<view wx:if="{{check_status===true}}" 
+					id="check-btn"
+					bindtap="check"
+					class="round-btn" style="background-color: #0BB07B">Check the phrase</view>
+		</view>
+	</view>
+
+	<view wx:else class="page-body">
+		<view class="panel study-panel">
+			<view class="el-card">
+				<view class="title">I am going to school</view>
+				<progress percent="40" class="margin-top-30" activeColor="#ffad0d" stroke-width="15" active />
+				<view class="margin-top-30 title text-center" style="font-size: 32rpx">40% match</view>
+			</view>
+
+			<view class="media-btn-group">
+				<media-button class="media-btn" player_string="Listed my result"></media-button>
+				<view class="round-btn retry-btn" style="background-color: #FFAD0D" bindtap="init">
+					Re-try
+				</view>
+			</view>			
+		</view>
+		<view class="panel">
+			<view 
+				id="next-phrase"
+				bindtap="next"
+				class="round-btn" style="background-color: #0C66FF">Next phrase<icon></icon></view>
+		</view>
+	</view>
+
+	<view class="panel">
+		<view id="skip-btn"
+				class="skip-btn">Skip to the next ></view>
+	</view>
+
+</view>

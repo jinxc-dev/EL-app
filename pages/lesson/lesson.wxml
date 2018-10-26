@@ -1,5 +1,5 @@
 <!--lesson.wxml-->
 <view class="container">
 	<view class="main-title">My lessons</view>
-	<task-list list="{{lessonList}}" url="/pages/logs/logs" style="width: 100%"></task-list>
+	<task-list list="{{lessonList}}" url="/pages/process/index" style="width: 100%"></task-list>
 </view>

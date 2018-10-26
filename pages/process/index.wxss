@@ -1,0 +1,79 @@
+/**lesson.wxss**/
+@import "/common.wxss";
+.section_hd {
+    /* width: 100%; */
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+}
+
+.info-section {
+    width: 60%;
+}
+.process-section {
+    width: 40%;
+    float: right;
+}
+
+.text-title {
+    color: #182C4F;
+    font-weight: bolder;
+    font-size: 50rpx;
+}
+
+.text-context {
+    color: #768087;
+    font-size: 32rpx;
+    margin-bottom: 10px;
+}
+
+/*
+page body css
+*/
+.page-body {
+    margin-top: 30rpx;
+}
+.study-panel {
+    background-color: #F1F2F4;
+}
+
+.el-card {
+    background-color: #FFFFFF;
+    padding: 10px ;
+    margin-bottom: 40rpx;
+}
+
+.el-card .title {
+    font-size: 40rpx;
+    color: #2C3E5E;
+    font-weight: bolder;
+}
+
+.margin-top-30 {
+    margin-top: 30rpx;
+}
+.media-btn-group {
+    margin-top: 30rpx;
+    display: flex;
+}
+
+.media-btn-group .media-btn {
+    width: 65%;
+    padding-right: 15rpx;
+}
+
+.media-btn-group .retry-btn {
+    width: 35%;
+}
+
+/* .signal-bg {
+    width: 100%;
+} */
+
+.skip-btn {
+    font-size: 40rpx;
+    text-align: center;
+}
+
+

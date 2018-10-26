@@ -1,8 +1,9 @@
 {
-	"pages":[
+	"pages":[		
 		"pages/lesson/lesson",
 		"pages/explore/index",
 		"pages/logs/logs",
+		"pages/process/index",
 		"pages/index/index"
 		
 	],

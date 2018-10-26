@@ -12,6 +12,5 @@
     <view class="process-section">
         <progress-ring value="{{item.status}}" style="float:right;"></progress-ring>
     </view>
-
 </view>
 

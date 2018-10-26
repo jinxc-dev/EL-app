@@ -1,0 +1,12 @@
+<!--components/shop/shop.wxml-->
+
+<view >
+    <view wx:if="{{is_played===0}}" class="media-btn play-btn" bindtap="play">
+        <view class="btn"></view>
+        <view class="text">{{player_string}}</view>
+    </view>
+    <view wx:else class="media-btn stop-btn" bindtap="stop">
+        <view class="btn"></view>
+        <view class="signal"><view class="signal-bg"></view></view>
+    </view>
+</view>
