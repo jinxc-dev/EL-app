@@ -17,18 +17,31 @@ App({
 				if (res.authSetting['scope.userInfo']) {
 					wx.getUserInfo({
 						success: res => {
-						this.globalData.userInfo = res.userInfo
+							this.globalData.userInfo = res.userInfo
 
-						if (this.userInfoReadyCallback) {
-							this.userInfoReadyCallback(res)
-						}
+							if (this.userInfoReadyCallback) {
+								this.userInfoReadyCallback(res)
+							}
 						}
 					})
 				}
 			}
 		})
 	},
+	setRecordedFile(file) {
+		this.globalData.recordedFile = file
+	},
+
+	getRecordedFile() {
+		return this.globalData.recordedFile;
+	},
+
+	getSourceFile() {
+		return this.globalData.sourceFile;
+	},
 	globalData: {
-		userInfo: null
+		userInfo: null,
+		recordedFile: null,
+		sourceFile: null
 	}
 })

@@ -15,10 +15,7 @@
 			<view class="el-card">
 				<view class="title">I am going to school</view>
 				<view class="media-btn-group">
-					<media-button class="media-btn" player_string="Listed now"></media-button>
-					<!-- <view class="round-btn retry-btn" style="background-color: #FFAD0D">
-						Re-try
-					</view> -->
+					<media-button class="media-btn" player_string="Listed now" type="src"></media-button>
 				</view>				
 			</view>
 			<view wx:if="{{is_record===false}}" 
@@ -47,7 +44,7 @@
 			</view>
 
 			<view class="media-btn-group">
-				<media-button class="media-btn" player_string="Listed my result"></media-button>
+				<media-button class="media-btn" player_string="Listed my result" type="recorded"></media-button>
 				<view class="round-btn retry-btn" style="background-color: #FFAD0D" bindtap="init">
 					Re-try
 				</view>
